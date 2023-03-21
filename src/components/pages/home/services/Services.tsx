@@ -145,7 +145,7 @@ export const Services = () => {
                             <ServicesItem key={index} style={{backgroundImage: `url(${el.path})`}}>
                                 <span></span>
                                 <div className="item__overlay">
-                                    <h3 id="person1" aria-hidden="true">{el.title}</h3>
+                                    <h3>{el.title}</h3>
                                     <ul className="item__body">
                                         {el.linksList.map((link, j) => (
                                             <li key={j}><Link to={link.link} key={j}>{link.value}</Link></li>
