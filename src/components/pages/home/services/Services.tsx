@@ -161,32 +161,3 @@ export const Services = () => {
         </ServicesWrapper>
     );
 };
-
-
-// export const Services = () => {
-//     return (
-//         <ServicesWrapper>
-//             <StyledContainer>
-//                 <ServicesFlex>
-//                     {array.map((el,index)=> {
-//                         return(
-//                             <ServicesCart key={index} style={{backgroundImage: `url(${el.path})`}} >
-//                                 <Block>
-//                                     <h3>{el.title}</h3>
-//                                     <NavBlock>
-//                                         <ul>
-//                                             {el.linksList.map((link, j) => (
-//                                                 <li key={j}><Link to={link.link} key={j}>{link.value}</Link></li>
-//                                             ))}
-//                                         </ul>
-//                                     </NavBlock>
-//                                 </Block>
-//                             </ServicesCart>
-//                         )
-//                     })}
-//                 </ServicesFlex>
-//             </StyledContainer>
-//         </ServicesWrapper>
-//
-//     );
-// };
