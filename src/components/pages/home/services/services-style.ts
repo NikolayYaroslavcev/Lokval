@@ -29,6 +29,9 @@ export const ServicesItem = styled.div`
   justify-content: center;
   cursor: pointer;
   background-size: cover;
+     @media (max-width: 836.98px) {
+       width: 100%;
+     }
 
 
   h3 {
