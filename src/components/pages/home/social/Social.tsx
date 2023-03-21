@@ -1,12 +1,8 @@
 import React from 'react';
 import {SocialWrapper, SocialMedia, NumberBlock, SocialMediaBlock} from './social-style';
 import telephone from '../../../../assets/img/modal/icons/telephone.svg'
-import {StyledContainer} from "../../../layout/header/header-style";
-import {SocialData} from "./SocialData";
-import SocialIcons from "./SocialIcons";
-
-
-
+import {StyledContainer} from '../../../layout/header/header-style';
+import {SocialIcons} from './SocialIcons';
 
 
 export const Social = () => {
@@ -24,11 +20,7 @@ export const Social = () => {
                 </SocialMedia>
                 <SocialMedia>
                     <SocialMediaBlock>
-                        {SocialData.map((el) => {
-                            return (
-                                <SocialIcons key={el.id} id={el.id} link={el.link} img={el.img} alt={el.alt}  />
-                            )
-                        })}
+                        <SocialIcons/>
                         <a href="mailto:info@lokval.by" target="_blank" rel="noreferrer">info@lokval.by</a>
                     </SocialMediaBlock>
                 </SocialMedia>

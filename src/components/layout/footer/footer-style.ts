@@ -28,7 +28,6 @@ export const StonesBlock = styled.div`
       text-align: center;
     }
     @media (max-width: 932.98px) {
-      
     }
   }
 

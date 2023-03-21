@@ -7,28 +7,27 @@ import {
     SocialFooterBlock,
     SocialFooterContact,
     StonesBlock
-} from "./footer-style";
-import {Link} from "react-router-dom";
-import {StyledContainer} from "../header/header-style";
+} from './footer-style';
+import {Link} from 'react-router-dom';
+import {StyledContainer} from '../header/header-style';
 import location from '../../../assets/img/modal/footerIcons/location.svg'
 import tell from '../../../assets/img/modal/footerIcons/tell.svg'
-import SocialIcons from "../../pages/home/social/SocialIcons";
-import {SocialData} from "../../pages/home/social/SocialData";
 import row from '../../../assets/img/modal/footerIcons/row.svg'
+import {SocialIcons} from '../../pages/home/social/SocialIcons';
 
 
 const linksList = [
     {
-        value: "Виды камня",
-        link: "/"
+        value: 'Виды камня',
+        link: '/'
     },
     {
-        value: "Отделка камнем",
-        link: "/"
+        value: 'Отделка камнем',
+        link: '/'
     },
     {
-        value: "Изделия из камня",
-        link: "/"
+        value: 'Изделия из камня',
+        link: '/'
     },
 ]
 
@@ -58,11 +57,7 @@ export const Footer = () => {
                     </LocationBlock>
                     <SocialBlock>
                         <SocialFooterBlock>
-                            {SocialData.map((el) => {
-                                return (
-                                    <SocialIcons key={el.id} id={el.id} link={el.link} img={el.img} alt={el.alt}/>
-                                )
-                            })}
+                            <SocialIcons/>
                         </SocialFooterBlock>
                         <SocialFooterContact>
                             <img src={row} alt="row"/>
