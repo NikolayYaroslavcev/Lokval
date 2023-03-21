@@ -7,10 +7,14 @@ export const HeaderStyle = styled.header`
   min-height: 58px;
   background: rgba(0, 0, 0, 0.3);
   position: fixed;
-  top:0;
+  top: 0;
   z-index: 999;
   width: 100%;
   margin-bottom: 2rem;
+  @media (max-width: 768.98px) {
+    padding: 14px 9px;
+  }
+
 `
 
 export const StyledContainer = styled.div`
@@ -23,6 +27,7 @@ export const HeaderWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 15px;
 
   a {
     font-weight: 700;
@@ -37,20 +42,18 @@ export const HeaderWrapper = styled.div`
       }
     }
   }
-  `
+`
 
 
 export const HeaderImage = styled.div<PropsImageType>`
   display: flex;
   position: relative;
-  //flex: 0 0 50%;
   text-align: center;
   max-width: ${({width}) => width || '96px'};
   max-height: ${({height}) => height || '96px'};
   max-height: ${({height}) => height || '96px'};
   border-radius: ${({borderRadius}) => borderRadius || '100%'};
   transition: all 0.3s;
-
 
   :hover {
     scale: ${({hover}) => hover ? '1.1' : '1'};
@@ -81,12 +84,11 @@ export const Button = styled.button`
     :hover {
       background: linear-gradient(180deg, #852c2e 62.5%, #3f260b 100%);
     }
-    
+
   }
 
 
-
-  @media (max-width: 1086.98px) {
+  @media (max-width: 1109.98px) {
     background: rgb(204, 204, 204);
   }
 `

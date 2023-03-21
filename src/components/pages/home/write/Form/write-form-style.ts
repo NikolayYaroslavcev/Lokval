@@ -1,21 +1,34 @@
 import styled from "styled-components";
 
 export const WriteFormWrapper = styled.div`
+  @media (max-width: 1108.98px) {
+    display: flex;
+    justify-content: center;
+  }
+
   form {
     display: flex;
     flex-direction: column;
     gap: 24px;
+    //@media (max-width: 1108.98px) {
+    //  width: 100%;
+    //}
+
   }
+
+  width: 100%;
 
   div {
     display: flex;
     justify-content: space-between;
     gap: 24px;
-    @media (max-width: 674.98px) {
+    @media (max-width: 1108.98px) {
       flex-direction: column;
+      justify-content: center;
+      display: flex;
     }
   }
-  
+
   button {
     padding: 0px 20px;
     gap: 10px;
@@ -29,6 +42,7 @@ export const WriteFormWrapper = styled.div`
     color: #FFFFFF;
     margin: 0 auto;
     transition: all 0.3s ease;
+
     &:hover {
       background: #591214;
     }

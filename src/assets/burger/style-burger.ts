@@ -5,7 +5,7 @@ export const Burger = styled.button<PropsBurger>`
   display: none;
 }
 
-@media (max-width: 1086.98px) {
+@media (max-width: 1109.98px) {
   display: block;
   position: relative;
   width: 30px;
@@ -24,7 +24,7 @@ export const Burger = styled.button<PropsBurger>`
     width: 100%;
     height: 2px;
 
-    @media (max-width: 1086.98px) {
+    @media (max-width: 1109.98px) {
       background: #fff;
     }
 

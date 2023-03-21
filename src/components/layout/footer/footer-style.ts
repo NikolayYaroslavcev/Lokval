@@ -23,9 +23,12 @@ export const StonesBlock = styled.div`
     display: flex;
     flex-direction: column;
     gap: 12px;
+    @media (max-width: 425.98px) {
+     flex-direction: column;
+      text-align: center;
+    }
     @media (max-width: 932.98px) {
-      flex-direction: row;
-      gap: 20px;
+      
     }
   }
 
@@ -49,8 +52,8 @@ export const LocationBlock = styled.div`
   @media (max-width: 932.98px) {
     gap: 15px;
   }
-  
-  div{
+
+  div {
     display: flex;
     gap: 25px;
     align-items: center;
@@ -58,6 +61,10 @@ export const LocationBlock = styled.div`
     font-size: 20px;
     line-height: 27px;
     color: #FFFFFF;
+    @media (max-width: 425.98px) {
+      flex-direction: column;
+      gap: 10px;
+    }
   }
 `
 export const SocialBlock = styled.div`
@@ -104,4 +111,7 @@ export const SocialFooterBlock = styled.div`
 export const SocialFooterContact = styled.div`
 display: flex;
 gap: 29.5px;
+  @media (max-width: 948.98px) {
+    justify-content: center;
+  }
 `

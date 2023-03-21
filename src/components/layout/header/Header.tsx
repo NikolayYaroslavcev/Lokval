@@ -14,7 +14,6 @@ import {
     MenuItem,
     StyledContainer,
 } from './header-style';
-import {ImageWrapper} from '../../../assets/ImegeWrap';
 import {Link} from 'react-router-dom';
 
 

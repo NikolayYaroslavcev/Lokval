@@ -62,7 +62,7 @@ export const BlockImg = styled.div`
 export const BlockContent = styled.div`
   padding: 30px 0;
   flex: 1 1 auto;
-  @media (max-width: 1086.98px) {
+  @media (max-width: 1109.98px) {
     padding: 0;
   }
 `

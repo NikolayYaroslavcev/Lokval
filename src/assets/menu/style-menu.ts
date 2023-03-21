@@ -12,7 +12,7 @@ export const MenuList = styled.ul<PropsMenu>`
   @media (max-width: 1168.98px) {
     justify-content: center;
   }
-  @media (max-width: 1086.98px) {
+  @media (max-width: 1108.98px) {
     left: ${({isOpenBurger}) => isOpenBurger ? '0' : '-100%'};
     flex-direction: column;
     align-items: center;
