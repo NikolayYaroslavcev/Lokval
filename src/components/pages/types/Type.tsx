@@ -146,12 +146,9 @@ export const Type = () => {
                                         })}
                                     </KindsCartAbout>
                                 </div>
-
                             )
                         })
                     }
-
-
                 </StyledContainer>
             </MainWrapper>
         )

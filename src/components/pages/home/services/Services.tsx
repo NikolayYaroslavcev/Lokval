@@ -97,39 +97,39 @@ const array = [
         linksList: [
             {
                 value: 'Акушинский известняк',
-                link: '/'
+                link: '/stone'
             },
             {
                 value: 'Гелинбатанский ракушечник',
-                link: '/'
+                link: '/stone'
             },
             {
                 value: 'Дербенский ракушечник',
-                link: '/'
+                link: '/stone'
             },
             {
                 value: 'Каякенский ракушечник',
-                link: '/'
+                link: '/stone'
             },
             {
                 value: 'Левашинский известняк',
-                link: '/'
+                link: '/stone'
             },
             {
                 value: 'Мекигинский доломит',
-                link: '/'
+                link: '/stone'
             },
             {
                 value: 'Рукельский ракушечник',
-                link: '/'
+                link: '/stone'
             },
             {
                 value: 'Чиринский известняк',
-                link: '/'
+                link: '/stone'
             },
             {
                 value: 'Фрикский ракушечник',
-                link: '/'
+                link: '/stone'
             },
         ]
     },
@@ -143,7 +143,7 @@ export const Services = () => {
                     {array.map((el, index) => {
                         return (
                             <ServicesItem key={index} style={{backgroundImage: `url(${el.path})`}}>
-                                <span></span>
+                                <span><Link to={"/stone"}></Link></span>
                                 <div className="item__overlay">
                                     <h3>{el.title}</h3>
                                     <ul className="item__body">

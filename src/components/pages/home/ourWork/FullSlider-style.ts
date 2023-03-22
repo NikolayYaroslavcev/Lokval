@@ -7,6 +7,10 @@ export const FullSliderWrapper = styled.section`
     position: relative;
   }
 
+  .swiper-3d {
+    perspective: 764px;
+  }
+
   .swiper-slide {
     width: 37rem;
     position: relative;
