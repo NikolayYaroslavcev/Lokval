@@ -7,6 +7,7 @@ import {About} from './components/pages/about/About';
 import {Catalog} from './components/pages/catalog/Catalog';
 import {Type} from './components/pages/types/Type';
 import {StoneProduct} from './components/pages/stone/StoneProduct';
+import {Fireplace} from './components/pages/fireplace/Fireplace';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
                 <Route path="catalog" element={<Catalog/>}/>
                 <Route path="type" element={<Type/>}/>
                 <Route path="stone" element={<StoneProduct/>}/>
+                <Route path="fireplace" element={<Fireplace/>}/>
             </Route>
         </Routes>
 )

@@ -1,5 +1,4 @@
 import React from 'react';
-import {StoneBackgroundBg} from './stoneProduct-style';
 import {StyledContainer} from '../../layout/header/header-style';
 import {FlexContainer} from '../home/background/background-style';
 import {MainWrapper} from '../home/main-style';
@@ -13,37 +12,36 @@ import {
 } from '../types/type-style';
 import {KindsCart, KindsCartAbout, KindsCartBlock, KindsCartSubTitle} from '../catalog/Kinds/kinds-style';
 import {Link} from 'react-router-dom';
+import {FireplaceBackgroundBg} from './fireplace-style';
 
 
-const stoneArray = [
+const fireplaceArray = [
     {
-        title: 'Балясины',
+        title: 'Отделка интерьера',
         path: '/images/stone/akyshinskii-izvestnyak.png',
-        descriptionOne: 'Балясина – невысокий фигурный столбик, поддерживающий перила ограждения балконов, лестниц. Несмотря на то, что балясины и перила несут декоративную функцию, прежде всего это безопасность и удобство.',
-        descriptionTwo: 'Балясины из камня – это лучший вариант по прочности и долговечности. Мы изготавливаем балясины из натурального камня различных форм и размеров, а также и перила, являющиеся неотъемлемой частью балюстрады.',
-        descriptionThree: 'Балясины из камня имеют ряд преимуществ как в архитектурном решении так и прочности всей конструкции. Мы можем изготовить балясины как классическом исполнении так и в комбинированном из двух камней.',
-        descriptionFour: 'Балясины и перила из камня не требуют ухода, они долговечны, экологически безвредны, а возможность использования балясин на вашем участке широка: как ограждение, так и декор. Это делает балясины востребованным у дизайнеров.',
-        descriptionFive: 'У нас вы можете приобрести балясины из различных камней и многообразию форм и размеров.',
+        descriptionOne: 'Натуральный камень – один из самых красивых, практичных и экологичных отделочных материалов, используемых в интерьере. Его прочность и долговечность неоспоримы.',
+        descriptionTwo: '    Цвет и фактура натурального камня способна задать настроение всему интерьеру. Отделка камнем в интерьере - известный приём дизайнеров. Эффектный внешний вид, благородство фактуры, широкая палитра цвета и практичность делают дикий и распиленный камень популярным материалом для облицовки стен. Правильно подобранный натуральный камень будет служить десятилетиями и никогда не потеряет своей привлекательности.',
+        descriptionThree: '    У нас есть возможность удовлетворить потребности в камне для интерьера. Мы будем рады помочь вам.',
         similarTitle: 'Похожие товары',
         similar: [
             {
-                path: '/images/stone/productionOne.png',
-                value: 'Пилястры',
+                path: '/images/fireplace/productionOne.png',
+                value: 'Отделка фасадов',
                 link: '/',
             },
             {
-                path: '/images/stone/productionTwo.png',
-                value: 'Мекигинская «Лапша»',
+                path: '/images/fireplace/productionTwo.png',
+                value: 'Отделка цоколя',
                 link: '/',
             },
             {
-                path: '/images/stone/productionThree.png',
-                value: 'Кронштейны',
+                path: '/images/fireplace/productionThree.png',
+                value: 'Отделка заборов',
                 link: '/',
             },
             {
-                path: '/images/stone/productionFour.png',
-                value: 'Наличники',
+                path: '/images/fireplace/productionFour.png',
+                value: 'Отделка каминов',
                 link: '/',
             },
         ]
@@ -55,18 +53,18 @@ const flexStyle = {
     align: 'flex-end',
 }
 
-export const StoneProduct = () => {
+export const Fireplace = () => {
     return (
         <MainWrapper>
-            <StoneBackgroundBg>
+            <FireplaceBackgroundBg>
                 <StyledContainer>
                     <FlexContainer {...flexStyle} >
-                        <h1>Изделия из камня</h1>
+                        <h1>Отделка камнем</h1>
                     </FlexContainer>
                 </StyledContainer>
-            </StoneBackgroundBg>
+            </FireplaceBackgroundBg>
             <StyledContainer>
-                {stoneArray.map((el, index) => {
+                {fireplaceArray.map((el, index) => {
                     return (
                         <div key={index}>
                             <TypeContainer>
@@ -77,8 +75,6 @@ export const StoneProduct = () => {
                                         <BlockDescription>{el.descriptionOne}</BlockDescription>
                                         <BlockDescription>{el.descriptionTwo}</BlockDescription>
                                         <BlockDescription>{el.descriptionThree}</BlockDescription>
-                                        <BlockDescription>{el.descriptionFour}</BlockDescription>
-                                        <BlockDescription>{el.descriptionFive}</BlockDescription>
                                     </BlockContent>
                                 </TypeBlock>
                             </TypeContainer>
