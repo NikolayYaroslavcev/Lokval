@@ -33,10 +33,13 @@ export const TypeContainer = styled.div`
 
 export const TypeTitle = styled.h2`
   font-weight: 700;
-  font-size: 36px;
   line-height: 48px;
   margin-bottom: 34px;
   text-align: center;
+  font-size: calc(25px + 11 * (100vw / 1270));
+  @media(max-width: 767px) {
+    font-size: calc(25px + (25 + 11 * 0.7) * ((100vw - 320px) / 1270));
+  }
 `
 export const TypeBlock = styled.div`
   display: flex;

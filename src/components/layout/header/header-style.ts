@@ -22,6 +22,8 @@ export const StyledContainer = styled.div`
   box-sizing: content-box;
   margin: 0 auto;
   padding: 0 15px;
+  width: 100%;
+  //margin-right: 15px;
 `
 export const HeaderWrapper = styled.div`
   display: flex;

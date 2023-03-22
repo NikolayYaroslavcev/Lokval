@@ -10,26 +10,31 @@ export const KindsBlockWrap = styled.div`
 
 export const KindsCartTitle = styled.h2`
   font-weight: 700;
-  font-size: 36px;
   line-height: 48px;
   color: #000000;
   margin-bottom: 34px;
   text-align: center;
+  font-size: calc(25px + 11 * (100vw / 1270));
+  @media(max-width: 767px) {
+    font-size: calc(25px + (25 + 11 * 0.7) * ((100vw - 320px) / 1270));
+  }
+
+
 `
 export const KindsCartAbout = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 34px 26px;
   margin-bottom: 100px;
-  //justify-content: center;
+  justify-content: space-between;
 
-  
+
   @media (max-width: 1220.98px) {
     justify-content: space-evenly;
   }
-     @media (max-width: 768.98px) {
-       margin-bottom: 20px;
-     }
+  @media (max-width: 768.98px) {
+    margin-bottom: 20px;
+  }
 `
 
 

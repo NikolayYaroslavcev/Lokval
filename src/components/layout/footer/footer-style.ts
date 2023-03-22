@@ -23,11 +23,13 @@ export const StonesBlock = styled.div`
     display: flex;
     flex-direction: column;
     gap: 12px;
-    @media (max-width: 425.98px) {
-     flex-direction: column;
+    @media (max-width: 768.98px) {
+      flex-direction: inherit;
       text-align: center;
     }
-    @media (max-width: 932.98px) {
+    @media (max-width: 546.98px) {
+      flex-direction: column;
+      text-align: center;
     }
   }
 
@@ -65,6 +67,14 @@ export const LocationBlock = styled.div`
       gap: 10px;
     }
   }
+
+  p {
+    @media (max-width: 425.98px) {
+      text-align: center;
+    }
+
+  }
+
 `
 export const SocialBlock = styled.div`
 display: flex;
@@ -75,7 +85,6 @@ flex-direction: column;
   }
 `
 export const SocialFooterBlock = styled.div`
-  padding: 10px 15px;
   display: flex;
   gap: 34px;
   align-items: center;
@@ -108,9 +117,17 @@ export const SocialFooterBlock = styled.div`
   }
 `
 export const SocialFooterContact = styled.div`
-display: flex;
-gap: 29.5px;
+  display: flex;
+  gap: 29.5px;
   @media (max-width: 948.98px) {
     justify-content: center;
+  }
+
+  a {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 27px;
+    text-transform: lowercase;
+    color: #fff;
   }
 `

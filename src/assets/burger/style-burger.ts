@@ -13,6 +13,7 @@ export const Burger = styled.button<PropsBurger>`
   height: 18px;
   cursor: pointer;
   z-index: 999;
+  margin-right: 15px;
 
   span,
   &::before,
