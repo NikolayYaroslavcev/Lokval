@@ -5,7 +5,7 @@ import {StyledContainer} from "../../../layout/header/header-style";
 export const CatalogBackground = () => {
     return (
         <CatalogBackgroundWrapper>
-            <StyledContainer>
+            <StyledContainer style={{width:"100%"}}>
                 <CatalogBackgroundFlex>
                     <h1>Каталог товаров</h1>
                 </CatalogBackgroundFlex>

@@ -11,7 +11,7 @@ const flexStyle = {
 export const Background = () => {
     return (
         <BackgroundContainer>
-            <StyledContainer>
+            <StyledContainer style={{width:"100%"}}>
                 <FlexContainer {...flexStyle} >
                     <h1>Надежное и долговечное благополучие</h1>
                 </FlexContainer>

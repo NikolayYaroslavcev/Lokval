@@ -14,7 +14,7 @@ type PropsType = {
 export const AboutColumn: FC<PropsType> = ({id, bg_img, justify, align, bg_text}) => {
     return (
         <AboutColumnWrapper key={id} style={{backgroundImage: `url(${bg_img})`}}>
-            <StyledContainer>
+            <StyledContainer style={{width:"100%"}}>
                 <AboutFlex style={{justifyContent: justify, textAlign: align}}>
                     {id === 1 ?<h1>{bg_text}</h1> :<p>{bg_text}</p>}
                 </AboutFlex>

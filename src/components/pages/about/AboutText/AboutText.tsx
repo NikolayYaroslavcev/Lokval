@@ -10,7 +10,7 @@ type PropsType = {
 export const AboutText:FC<PropsType> = ({id,big_text}) => {
     return (
         <AboutTextWrapper>
-            <StyledContainer>
+            <StyledContainer style={{width:"100%"}}>
                 <AboutTextBlock>{big_text}</AboutTextBlock>
             </StyledContainer>
         </AboutTextWrapper>

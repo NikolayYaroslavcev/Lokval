@@ -59,7 +59,7 @@ export const StoneProduct = () => {
     return (
         <MainWrapper>
             <StoneBackgroundBg>
-                <StyledContainer>
+                <StyledContainer style={{width:"100%"}}>
                     <FlexContainer {...flexStyle} >
                         <h1>Изделия из камня</h1>
                     </FlexContainer>

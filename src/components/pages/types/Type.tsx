@@ -83,13 +83,13 @@ export const Type = () => {
         return (
             <MainWrapper>
                 <TypeBackgroundBg>
-                    <StyledContainer>
+                    <StyledContainer style={{width:"100%"}}>
                         <FlexContainer {...flexStyle} >
                             <h1>Виды камня</h1>
                         </FlexContainer>
                     </StyledContainer>
                 </TypeBackgroundBg>
-                <StyledContainer>
+                <StyledContainer style={{width:"100%"}}>
                     {typeArray.map((el, index) => {
                         return (
                             <TypeContainer key={index}>
