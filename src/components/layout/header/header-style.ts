@@ -22,12 +22,6 @@ export const StyledContainer = styled.div`
   box-sizing: content-box;
   margin: 0 auto;
   padding: 0 15px;
-    //width: 100%;
-  //
-  //@media (min-width: 1322.98px) {
-  //  width: 100%;
-  //}
-
 `
 export const HeaderWrapper = styled.div`
   display: flex;

@@ -57,7 +57,7 @@ export const Fireplace = () => {
     return (
         <MainWrapper>
             <FireplaceBackgroundBg>
-                <StyledContainer style={{width:"100%"}}>
+                <StyledContainer style={{width: '100%'}}>
                     <FlexContainer {...flexStyle} >
                         <h1>Отделка камнем</h1>
                     </FlexContainer>
