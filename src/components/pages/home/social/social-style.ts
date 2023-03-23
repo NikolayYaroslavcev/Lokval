@@ -1,13 +1,28 @@
 import styled from "styled-components";
 
 export const SocialWrapper = styled.section`
+  //padding-top: 95px;
+  //display: flex;
+  //justify-content: space-between;
+  //margin-bottom: 95px;
+  //gap: 15px;
+  //
+  //
+  //@media (max-width: 948.98px) {
+  //  flex-wrap: wrap;
+  //  width: 100%;
+  //  padding-top: 25px;
+  //  margin-bottom: 25px;
+  //}
+
+
+`
+export const SocialItems = styled.div`
   padding-top: 95px;
   display: flex;
   justify-content: space-between;
   margin-bottom: 95px;
   gap: 15px;
-
-
   @media (max-width: 948.98px) {
     flex-wrap: wrap;
     width: 100%;
@@ -16,7 +31,6 @@ export const SocialWrapper = styled.section`
   }
 
 `
-
 export const SocialMedia = styled.div`
   border: 1px solid #1E1E1E;
   border-radius: 10px;
