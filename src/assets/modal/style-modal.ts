@@ -18,7 +18,7 @@ export const ModalWrap = styled.div`
   @media (max-width: 320.98px) {
     left: -4px;
   }
-  //scale: 0;
+
   
   
   
@@ -52,7 +52,7 @@ export const DialogButton = styled.button`
   width: 100%;
 
   :hover {
-    background: #3D5F47;
+    background: linear-gradient(rgb(89, 18, 20) 62.5%, rgb(136, 80, 16) 100%);
   }
   @media (max-width: 320.98px) {
     margin-bottom: 10px;
@@ -75,9 +75,12 @@ export const DialogBlock = styled.div`
   display: flex;
   flex-direction: column;
   row-gap: 20px;
+  align-items: center;
 
   img {
-    background: #67b07b;
+    background: linear-gradient(rgb(89, 18, 20) 62.5%, rgb(136, 80, 16) 100%);
+    width:300px;
+    padding: 10px 20px;
   }
 
 

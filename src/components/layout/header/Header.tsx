@@ -5,6 +5,7 @@ import {MenuList} from '../../../assets/menu/style-menu';
 import {ButtonClose, DialogBlock, DialogButton, ModalWrap, PopupWrap} from '../../../assets/modal/style-modal';
 
 import logo from '../../../assets/img/modal/logo.png'
+import logoModal from '../../../assets/img/modal/logo.png'
 
 import {
     Button,
@@ -60,6 +61,7 @@ export const Header = () => {
                                 <ButtonClose onClick={onClickModalWindow}>X</ButtonClose>
                                 <Dialog.Panel>
                                     <DialogBlock>
+                                        <img src={logoModal} alt="logo"/>
                                         <div>Заказать звонок</div>
                                         <p>Оставьте заявку и наш специалист свяжется с вами в ближайшее время!</p>
                                         <input type="tel" placeholder={'+375('}/>
